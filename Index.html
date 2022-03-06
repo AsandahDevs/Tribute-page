@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Author" content="Asanda Majola">
+        <meta name="keywords" content="HTML,CSS,basics,tribute page,Dr.Dre">
+        <meta name="Description" content="A tribute page for Dr.Dre using HTML and CSS.">
+        <!--By specifying the viewport to 'width=device-width,initial-scale=1.0' i'm  telling the browser to adjust the webpage contents in relation to a device's screen resolution/size while maintaining the normal zoom level when a user initailly views a webpage.This will allow the web contents to be responsive.  -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <!--Importing a google font-->
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <title>A tribute page for Dr.Dre</title>
+        <style>
+            body{
+                background-color:black;
+
+            }
+            #header-image{
+                display: block;
+                width:100%;
+                opacity: 0.5;
+                margin: auto;
+            }  
+            h1 {
+                font-family:'lobster',monospace;
+                font-size: x-large;
+                text-align:center;
+            }
+            h1:hover{
+                color:gold;
+            }  
+            h2 {
+                font-family: 'lobster',monospace;
+                font-size: large;
+                text-align:left;
+            } 
+            /*The media query rule allows for responsiveness.In this case, when a device's screen size is less than 500px wide, the paragraph font size will change to small.*/
+             @media   (max-width:500px){ p{
+                                            font-size:small ;
+                                        }
+                                    }
+            p{
+                font-size: medium;
+            }
+            
+            
+            figcaption{
+                text-align: center;
+                font-family: 'lobster',monospace;
+                font-size: medium;
+                color:bisque;
+            }
+
+            div{
+            display: grid;
+            grid-template-columns: repeat( auto-fit ,200px);/*The repeat function with the value 'auto-fit' will automatically fit grid columns in accordance to a device's screen resolution/size.The second value in the repeat function specifies the column sizes.*/
+            }
+            
+        footer{
+            text-align: left;
+            font-size: small;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Dr.Dre:An Inspiration for Black Music Producers'.</h1>
+            <figure>
+                <figcaption>
+                <img id="header-image" src="..\..\Tribute-page\images\Dre portrait.jfif" alt=" ">A portrait of Dr.Dre
+                </figcaption>
+            </figure>
+        </header>
+        <main>
+           <h2>About</h2> 
+           <hr>
+                <p>
+                    Andre Romelle Young (born February 18, 1965), known professionally as Dr. Dre, is an American rapper, record producer, and entrepreneur. He is the founder and CEO of Aftermath Entertainment and Beats Electronics, and previously co-founded, co-owned, and was the president of Death Row Records. Dr. Dre began his career as a member of the World Class Wreckin' Cru in 1985 and later found fame with the gangsta rap group N.W.A. The group popularized explicit lyrics in hip hop to detail the violence of street life. During the early 1990s, Dre was credited as a key figure in the crafting and popularization of West Coast G-funk, a subgenre of hip hop characterized by a synthesizer foundation and slow, heavy beats.
+                    Dre's solo debut studio album The Chronic (1992), released under Death Row Records, made him one of the best-selling American music artists of 1993. It earned him a Grammy Award for Best Rap Solo Performance for the single "Let Me Ride", as well as several accolades for the single "Nuthin' but a 'G' Thang". That year, he produced Death Row labelmate Snoop Doggy Dogg's debut album Doggystyle and mentored producers such as his stepbrother Warren G (leading to the multi-platinum debut Regulate...G Funk Era in 1994) and Snoop Dogg's cousin Daz Dillinger (leading to the double-platinum debut Dogg Food by Tha Dogg Pound in 1995), as well as mentor to upcoming producers Sam Sneed and Mel-Man. In 1996, Dr. Dre left Death Row Records to establish his own label, Aftermath Entertainment. He produced a compilation album, Dr. Dre Presents the Aftermath, in 1996, and released a solo album, 2001, in 1999.
+                    During the 2000s, Dre focused on producing other artists, occasionally contributing vocals. He signed Eminem in 1998 and 50 Cent in 2002, and co-produced their albums. He has produced albums for and overseen the careers of many other rappers, including 2Pac, the D.O.C., Snoop Dogg, Xzibit, Knoc-turn'al, the Game, Kendrick Lamar, and Anderson .Paak. Dre has also had acting roles in movies such as Set It Off, The Wash, and Training Day. He has won six Grammy Awards, including Producer of the Year, Non-Classical. Rolling Stone ranked him number 56 on the list of 100 Greatest Artists of All Time. He was the second-richest figure in hip hop as of 2018 with an estimated net worth of $800 million.To learn more about his detailed career timeline click <a href="https://www.bing.com/k/celebrities/dr.-dre/timeline" target="_blank">here</a>.
+                </p>
+            <h2>Awards</h2>
+            <hr>
+            <ol type="i" >
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Billboard+Music+Award+for+Top+R+and+B+Artist&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKzsywqq4rStWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrHqOGXm5CTlA72g4FtanJms4AjyjkJafpFCSH6BQpBCYl6KgpOCY1FJZnHJBDZGAC7Ts2NUAQAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBk">1993:Billboard Music Award for Top R&B Artist.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Rap/Hip-Hop+New+Artist&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKzq5KyS6qStGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGKBSUW6HtkFuh65Bco-KWWKzgWlWQWl0xgYwQAathrID4BAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEB0&cshid=1645038158740543">1994:American Music Award For Favourite Rap/Hip-hop New Artist.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Best+Rap+Solo+Performance&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY1LTJPMtGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrFKOqUWlygEJRYoBOfn5CsEpBal5RflJuYlp05gYwQAatH2-EABAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEA0&cshid=1645038158740543">1994:Grammy Award For Best Rap Solo Performance.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=MTV+Video+Music+Award+for+Best+Rap+Video&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY3SzE1LtGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrFq-IaEKYRlpqTmK_iWFmcmKziCvKOQll-k4JRaXKIQlFgAkZ7AxggAtFZwiU8BAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBE&cshid=1645038158740543">1995:MTV Video Music Award For Best Rap Video .</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Soul+Train+Music+Award+for+Best+R%26B/Soul+Single+-+Group,+Band+or+Duo&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsZMrzAuMtWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrG6BOeX5iiEFCVm5in4lhZnJis4gvyjkJZfpOCUWlyiEKTmpA9WE5yZl56TqqCr4F6UX1qgo-CUmJeiAFTlUpo_gY0RADjpc3VrAQAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBU&cshid=1645038158740543">1997:Soul Train Music Award for Best R&B Soul Single-Group,Band or Duo.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=MTV+Video+Music+Award+for+Best+Rap+Video&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY3SzE1LtGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrFq-IaEKYRlpqTmK_iWFmcmKziCvKOQll-k4JRaXKIQlFgAkZ7AxggAtFZwiU8BAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBE&cshid=1645038158740543">2000:MTV Video Music Award For Best Rap Video. </a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=American+Music+Award+for+Favorite+Rap/Hip+Hop+Artist&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKz80wtjIzMtWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGaOOamFmUmJ-Yp-JYWZyYrOIJ8o5CWX6TglliWX5RZkqoQlFig75FZoOCRX6DgWFSSWVwygY0RACY-IDZcAQAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEA8&cshid=1645038158740543">2001:American Music Award For Favourite Rap/Hip-hop New Artist.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Soul+Train+Music+Award+for+Best+Album+of+the+Year&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsdOSU6ostWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrEaBueX5iiEFCVm5in4lhZnJis4gvyjkJZfpOCUWlyi4JiTVJqrkJ-mUJKRqhCZmlg0gY0RADC1u5hYAQAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBM&cshid=1645038158740543">2001:Soul Train Music Award For Best Album Of The Year.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Grammy+Award+for+Producer+of+the+Year,+Non-Classical&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY3yMirStGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGauBcl5uZWKjiCfKGQll-kEFCUn1KanFqkkJ-mUJKRqhCZmliko-CXn6frnJNYXJwJdNMENkYAGCOGfFsBAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEAs&cshid=1645038158740543">2001:Grammy Award For Producer Of The Year,Non-Classical.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Grammy+Award+for+Best+Rap+Album&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEs5MtU1K0ZLOTrfQTyxOLUiBkfHlmXl5qkRWYU_yI8Skjt8DLH_eEpW4zTlpz8hrjFUYu_FqE9LjYXPNKMksqhfikeLiQrDUS4eLVT9c3NMwqKDKsSEu3EOjpm82oVG2UsevStHNsSYIFnQwMBb5hDlJGgraq02rlX7231xLiYvcs9slPTswR_GXBul_v_Dt7LWEujpDEivy8_NxKwZU-Zgd-_X9vr6TIuZ1DaoHqyff2gj4sDA2cK50cJFgUGDQYDB9Zsjqsn8J4QIvhACNT074Vh9g4OBgFGIyYOBismDSYqpg4mHgWscq7FyXm5lYqOIJ8oZCWX6TglFpcohCUWKDgmJNUmjuBjREA6ImIwEYBAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEAc&cshid=1645038158740543">2001:Grammy Award For Best Rap Album.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Grammy+Award+for+Best+Rap+Performance+by+a+Duo+or+Group&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY2My4oKtWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGauxcl5uZWKjiCfKGQll-k4JRaXKIQlFigEJBaBOTnJuYlpyokVSokKriU5isAFbgX5ZcWTGBjBADe8wvnXgEAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEAk&cshid=1645038158740543">2001:Grammy Award For Best Rap Performance By a Duo or Group.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Sammy+Davis,+Jr.+%E2%80%93+Entertainer+(Male)&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKzKyssK0qqtGSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGqByfm5lYquCSWZRbrKHgV6Sk8apisAPRJalFJYibQfwoavok5qZoT2BgB6Fz4-E8BAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEB8&cshid=1645038158740543">2002:Soul Train Music Award for Sammy Davis,Jr-Entertainer of the year (Male).</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Grammy+Award+for+Best+Rap+Album&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEs5MtU1K0ZLOTrfQTyxOLUiBkfHlmXl5qkRWYU_yI8Skjt8DLH_eEpW4zTlpz8hrjFUYu_FqE9LjYXPNKMksqhfikeLiQrDUS4eLVT9c3NMwqKDKsSEu3EOjpm82oVG2UsevStHNsSYIFnQwMBb5hDlJGgraq02rlX7231xLiYvcs9slPTswR_GXBul_v_Dt7LWEujpDEivy8_NxKwZU-Zgd-_X9vr6TIuZ1DaoHqyff2gj4sDA2cK50cJFgUGDQYDB9Zsjqsn8J4QIvhACNT074Vh9g4OBgFGIyYOBismDSYqpg4mHgWscq7FyXm5lYqOIJ8oZCWX6TglFpcohCUWKDgmJNUmjuBjREA6ImIwEYBAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEAc&cshid=1645038158740543">2010:Grammy Award For Best Rap Album.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Grammy+Award+for+Best+Rap+Performance+by+a+Duo+or+Group&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUeIEsY2My4oKtWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kKw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrGauxcl5uZWKjiCfKGQll-k4JRaXKIQlFigEJBaBOTnJuYlpyokVSokKriU5isAFbgX5ZcWTGBjBADe8wvnXgEAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEAk&cshid=1645038158740543">2010:Grammy Award For Best Rap Performance By a Duo or Group.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=BET+Hip+Hop+Award+for+Hustler+of+the+Year&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKzKy2SSoottWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrFqOrmGKHhkFih45BcoOIK8opCWX6TgUVpckpNapJCfplCSkaoQmZpYNIGNEQCz8HjEUQEAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBc&cshid=1645038158740543">2014&2015:BET Awards For Hustler Of The Year.</a></li>
+                <li><a href="https://www.google.com/search?rlz=1C1CHBF_enZA954ZA954&sxsrf=APq-WBtmAuYvK7xEb9gD_VLU-IRvfdHdHA:1645037868725&q=Best+Hip+Hop/Urban+Artist+(International)&stick=H4sIAAAAAAAAAONgFuLSz9U3MCwrq0zJUQKzK4vLSooLtWSzk630E8sTi1IgZHx5Zl5eapEVmFP8iPEpI7fAyx_3hKVuM05ac_Ia4xVGLvxahPS42FzzSjJLKoX4pHi4kOw1EuHi1U_XNzTMKigyrEhLtxDo6ZvNqFRtlLHr0rRzbEmCBZ0MDAW-YQ5SRoK2qtNq5V-9t9cS4mL3LPbJT07MEfxlwbpf7_w7ey1hLo6QxIr8vPzcSsGVPmYHfv1_b6-kyLmdQ2qB6sn39oI-LAwNnCudHCRYFBg0GAwfWbI6rJ_CeECL4QAjU9O-FYfYODgYBRiMmDgYrJg0mKqYOJh4FrFqOqUWlyh4ZBYoeOQX6IcWJSXmKTgWlWQCBTU880pSi_ISSzLz8xJzNCewMQIAmmgASFEBAAA&sa=X&ved=2ahUKEwjKhrrO84T2AhX1oFwKHWCZAuAQri56BAgEEBs&cshid=1645038158740543">2016:Echo Award For Best Hip-Hop/Urban Artist(International).</a></li>
+            </ol>
+            <h2>Discography</h2>
+            <hr>
+            <div>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\The Chronic cover art.jfif" alt="The Chronic Album cover art" width="100%" height="auto"/>The Chronic <br>1992<!--The br element moves text to the next line-->
+                 </figcaption>  
+            </figure>                                                                                                                                                         
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Concrete roots 1994.jfif"  alt="Concrete roots Album cover art " width="100%" height="auto"/>Concrete Roots<br> 1994
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Dr Dre 1999.jfif" alt="Dr.Dre 1999 Album covert art" width="100%" height="auto"/>Dr.Dre <br>1999
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\The chronicles (the best of the works)2002.jfif" alt="The chronicles Album cover art" width="100%" height="auto"/>The Chronicles:The best of the works <br>2002
+                </figcaption>
+            </figure>
+            
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\High Times -The best of the Dr.Dre 2002.jfif" alt="High Times Album Cover art" width="100%" height="auto"/>High Times:The best of Dr.Dre <br>2002
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Snoop & Dre -longbeach 2005.jfif" alt="Snoop Dogg & Dr.Dre longbeach Album cover art" width="100%" height="auto"/>Snoop & Dre:From Crompton to longbeach<br>2005
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Dr.Dre vs World class wrekin cru 2006.jfif" alt="Dre vs World Class wreking crew Album cover art" width="100%" height="auto"/>Dr.Dre vs World Class Wreking Cru<br>2006
+                <figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Dr.Dre death row chronicles.jfif" alt=" Chronicles-Death row classics Album cover art" width="100%" height="auto"/>Chronicles:Death Row Classics<br>2006
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Dr Dre 2008.jfif" alt="Dr.Dre 2008 Album cover art" width="100%" height="auto"/>Dr.Dre<br> 2008
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>
+                    <img src="..\..\Tribute-page\images\Dr.Dre -my story 2015.jfif" alt="Dr.Dre:My story Album cover art" width="100%" height="auto"/>Dr.Dre:My story<br>2015
+                </figcaption>
+            </figure>
+            </div>
+        </main>
+     </body>
+     <br>
+    <footer>&copy; 2022 Copyright Asandah Devs</footer>
+</html>
